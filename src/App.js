@@ -31,7 +31,7 @@ function App() {
   }
 
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
 
       <div className='container'>
         <Navbar
@@ -48,7 +48,7 @@ function App() {
       </div>
       <Routes>
         <Route
-          path="/About"
+          path="/about"
           element={<About />}
         />
 
